@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>رادیو</title>
+<meta name="theme-color" content="#23262a">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="بی‌سیم رادیو">
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogItio24zigIzYs9uM2YUg2LHYp9iv24zZiCIsICJzaG9ydF9uYW1lIjogItio24zigIzYs9uM2YUg2LHYp9iv24zZiCIsICJkZXNjcmlwdGlvbiI6ICLYsdin2K/bjNmI24wg2KfbjNmG2KrYsdmG2KrbjCDYqNinINi42KfZh9ixINio24zigIzYs9uM2YUg2YLYp9io2YQg2K3ZhdmEIiwgInN0YXJ0X3VybCI6ICIuIiwgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsICJvcmllbnRhdGlvbiI6ICJwb3J0cmFpdCIsICJiYWNrZ3JvdW5kX2NvbG9yIjogIiMxNjE4MWIiLCAidGhlbWVfY29sb3IiOiAiIzIzMjYyYSIsICJpY29ucyI6IFt7InNyYyI6ICJkYXRhOmltYWdlL3N2Zyt4bWw7YmFzZTY0LFBITjJaeUI0Yld4dWN6MGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TUM5emRtY2lJSFpwWlhkQ2IzZzlJakFnTUNBeE9USWdNVGt5SWo0S1BISmxZM1FnZDJsa2RHZzlJakU1TWlJZ2FHVnBaMmgwUFNJeE9USWlJSEo0UFNJek5pSWdabWxzYkQwaUl6RmpNV1V5TVNJdlBnbzhjbVZqZENCNFBTSTFNaUlnZVQwaU56QWlJSGRwWkhSb1BTSTRPQ0lnYUdWcFoyaDBQU0k1TmlJZ2NuZzlJakUwSWlCbWFXeHNQU0lqTW1Nek1ETTJJaUJ6ZEhKdmEyVTlJaU0wTlRSaE5UQWlJSE4wY205clpTMTNhV1IwYUQwaU5DSXZQZ284Y21WamRDQjRQU0kyTmlJZ2VUMGlPRFlpSUhkcFpIUm9QU0kyTUNJZ2FHVnBaMmgwUFNJek5DSWdjbmc5SWpZaUlHWnBiR3c5SWlNd1pUSXdNVGdpSUhOMGNtOXJaVDBpSXpCaE1UY3daaUlnYzNSeWIydGxMWGRwWkhSb1BTSXlJaTgrQ2p4amFYSmpiR1VnWTNnOUlqazJJaUJqZVQwaU1UUXdJaUJ5UFNJeE1DSWdabWxzYkQwaUl6aGlabVppT0NJdlBnbzhiR2x1WlNCNE1UMGlPVFlpSUhreFBTSTNNQ0lnZURJOUlqazJJaUI1TWowaU16UWlJSE4wY205clpUMGlJemhoT0dZNU5DSWdjM1J5YjJ0bExYZHBaSFJvUFNJMUlpQnpkSEp2YTJVdGJHbHVaV05oY0QwaWNtOTFibVFpTHo0S1BHTnBjbU5zWlNCamVEMGlPVFlpSUdONVBTSXpNQ0lnY2owaU55SWdabWxzYkQwaUl6TmtaamM1WVNJdlBnbzhjR0YwYUNCa1BTSk5OekFnTlRnZ1FUTTRJRE00SURBZ01DQXhJREV5TWlBMU9DSWdabWxzYkQwaWJtOXVaU0lnYzNSeWIydGxQU0lqTTJSbU56bGhJaUJ6ZEhKdmEyVXRkMmxrZEdnOUlqUWlJSE4wY205clpTMXNhVzVsWTJGd1BTSnliM1Z1WkNJZ2IzQmhZMmwwZVQwaU1DNDROU0l2UGdvOGNHRjBhQ0JrUFNKTk5UZ2dOallnUVRVMklEVTJJREFnTUNBeElERXpOQ0EyTmlJZ1ptbHNiRDBpYm05dVpTSWdjM1J5YjJ0bFBTSWpNMlJtTnpsaElpQnpkSEp2YTJVdGQybGtkR2c5SWpRaUlITjBjbTlyWlMxc2FXNWxZMkZ3UFNKeWIzVnVaQ0lnYjNCaFkybDBlVDBpTUM0MUlpOCtDand2YzNablBnPT0iLCAic2l6ZXMiOiAiMTkyeDE5MiIsICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiLCAicHVycG9zZSI6ICJhbnkifSwgeyJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCNGJXeHVjejBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TWpBd01DOXpkbWNpSUhacFpYZENiM2c5SWpBZ01DQXhPVElnTVRreUlqNEtQSEpsWTNRZ2QybGtkR2c5SWpFNU1pSWdhR1ZwWjJoMFBTSXhPVElpSUhKNFBTSXpOaUlnWm1sc2JEMGlJekZqTVdVeU1TSXZQZ284Y21WamRDQjRQU0kxTWlJZ2VUMGlOekFpSUhkcFpIUm9QU0k0T0NJZ2FHVnBaMmgwUFNJNU5pSWdjbmc5SWpFMElpQm1hV3hzUFNJak1tTXpNRE0ySWlCemRISnZhMlU5SWlNME5UUmhOVEFpSUhOMGNtOXJaUzEzYVdSMGFEMGlOQ0l2UGdvOGNtVmpkQ0I0UFNJMk5pSWdlVDBpT0RZaUlIZHBaSFJvUFNJMk1DSWdhR1ZwWjJoMFBTSXpOQ0lnY25nOUlqWWlJR1pwYkd3OUlpTXdaVEl3TVRnaUlITjBjbTlyWlQwaUl6QmhNVGN3WmlJZ2MzUnliMnRsTFhkcFpIUm9QU0l5SWk4K0NqeGphWEpqYkdVZ1kzZzlJamsySWlCamVUMGlNVFF3SWlCeVBTSXhNQ0lnWm1sc2JEMGlJemhpWm1aaU9DSXZQZ284YkdsdVpTQjRNVDBpT1RZaUlIa3hQU0kzTUNJZ2VESTlJamsySWlCNU1qMGlNelFpSUhOMGNtOXJaVDBpSXpoaE9HWTVOQ0lnYzNSeWIydGxMWGRwWkhSb1BTSTFJaUJ6ZEhKdmEyVXRiR2x1WldOaGNEMGljbTkxYm1RaUx6NEtQR05wY21Oc1pTQmplRDBpT1RZaUlHTjVQU0l6TUNJZ2NqMGlOeUlnWm1sc2JEMGlJek5rWmpjNVlTSXZQZ284Y0dGMGFDQmtQU0pOTnpBZ05UZ2dRVE00SURNNElEQWdNQ0F4SURFeU1pQTFPQ0lnWm1sc2JEMGlibTl1WlNJZ2MzUnliMnRsUFNJak0yUm1OemxoSWlCemRISnZhMlV0ZDJsa2RHZzlJalFpSUhOMGNtOXJaUzFzYVc1bFkyRndQU0p5YjNWdVpDSWdiM0JoWTJsMGVUMGlNQzQ0TlNJdlBnbzhjR0YwYUNCa1BTSk5OVGdnTmpZZ1FUVTJJRFUySURBZ01DQXhJREV6TkNBMk5pSWdabWxzYkQwaWJtOXVaU0lnYzNSeWIydGxQU0lqTTJSbU56bGhJaUJ6ZEhKdmEyVXRkMmxrZEdnOUlqUWlJSE4wY205clpTMXNhVzVsWTJGd1BTSnliM1Z1WkNJZ2IzQmhZMmwwZVQwaU1DNDFJaTgrQ2p3dmMzWm5QZz09IiwgInNpemVzIjogIjUxMng1MTIiLCAidHlwZSI6ICJpbWFnZS9zdmcreG1sIiwgInB1cnBvc2UiOiAiYW55In1dfQ==">
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTkyIj4KPHJlY3Qgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxOTIiIHJ4PSIzNiIgZmlsbD0iIzFjMWUyMSIvPgo8cmVjdCB4PSI1MiIgeT0iNzAiIHdpZHRoPSI4OCIgaGVpZ2h0PSI5NiIgcng9IjE0IiBmaWxsPSIjMmMzMDM2IiBzdHJva2U9IiM0NTRhNTAiIHN0cm9rZS13aWR0aD0iNCIvPgo8cmVjdCB4PSI2NiIgeT0iODYiIHdpZHRoPSI2MCIgaGVpZ2h0PSIzNCIgcng9IjYiIGZpbGw9IiMwZTIwMTgiIHN0cm9rZT0iIzBhMTcwZiIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxjaXJjbGUgY3g9Ijk2IiBjeT0iMTQwIiByPSIxMCIgZmlsbD0iIzhiZmZiOCIvPgo8bGluZSB4MT0iOTYiIHkxPSI3MCIgeDI9Ijk2IiB5Mj0iMzQiIHN0cm9rZT0iIzhhOGY5NCIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPGNpcmNsZSBjeD0iOTYiIGN5PSIzMCIgcj0iNyIgZmlsbD0iIzNkZjc5YSIvPgo8cGF0aCBkPSJNNzAgNTggQTM4IDM4IDAgMCAxIDEyMiA1OCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM2RmNzlhIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC44NSIvPgo8cGF0aCBkPSJNNTggNjYgQTU2IDU2IDAgMCAxIDEzNCA2NiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM2RmNzlhIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC41Ii8+Cjwvc3ZnPg==">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --case: #23262a;
+    --case-hi: #34383e;
+    --case-lo: #17191c;
+    --grip: #131416;
+    --metal: #8a8f94;
+    --screw: #55595d;
+    --lcd-bg: #0e2018;
+    --lcd-bg-2: #0a170f;
+    --lcd-fg: #8bffb8;
+    --lcd-fg-dim: #3f7a5c;
+    --led-on: #3df79a;
+    --led-off: #4a3020;
+    --accent: #ff6a4d;
+    --accent-dim: #7a3a2c;
+    --btn: #2c3036;
+    --btn-hi: #40454c;
+    --btn-lo: #1a1c1f;
+    --text: #d8dadd;
+    --text-dim: #8a8f96;
+  }
+  *{box-sizing:border-box;}
+  html,body{
+    margin:0; min-height:100%;
+    background: radial-gradient(circle at 50% -10%, #3a3f46 0%, #16181b 55%, #0b0c0e 100%);
+    font-family:'Vazirmatn', sans-serif;
+    color:var(--text);
+    display:flex; align-items:flex-start; justify-content:center;
+    padding: 28px 12px 60px;
+  }
+  .stage{
+    position:relative; width:100%; max-width:640px;
+    display:flex; align-items:flex-start; justify-content:center;
+    padding: 0 88px;
+  }
+  .wrap{ width:100%; max-width:380px; position:relative; z-index:2; }
+
+  /* ---------- side wires filling the empty space ---------- */
+  .sidewire{
+    position:absolute; top:40px; bottom:10px; width:88px;
+    pointer-events:none; z-index:1;
+  }
+  .sidewire.left{ left:0; }
+  .sidewire.right{ right:0; transform:scaleX(-1); }
+  .sidewire svg{ width:100%; height:100%; overflow:visible; }
+  .wire-path{
+    fill:none; stroke:#454a50; stroke-width:3; stroke-linecap:round;
+    filter: drop-shadow(0 1px 1px rgba(0,0,0,.5));
+  }
+  .wire-path.inner{ stroke:#2a2d31; stroke-width:5.5; }
+  .wire-glow{
+    fill:none; stroke:var(--lcd-fg-dim); stroke-width:2; stroke-linecap:round;
+    stroke-dasharray: 6 14;
+    opacity:.55;
+    animation: wireFlowIdle 2.6s linear infinite;
+    transition: stroke .3s, opacity .3s;
+  }
+  body.on-air .wire-glow{
+    stroke: var(--lcd-fg);
+    opacity:1;
+    filter: drop-shadow(0 0 4px rgba(139,255,184,.85));
+    animation: wireFlowPlay 1s linear infinite;
+  }
+  @keyframes wireFlowIdle{ to{ stroke-dashoffset:-40; } }
+  @keyframes wireFlowPlay{ to{ stroke-dashoffset:-40; } }
+  .wire-node{ fill:#1a1c1f; stroke:#55595d; stroke-width:2; }
+  .wire-plug{ fill:#0d0f11; stroke:#55595d; stroke-width:2; }
+  .wire-plug-pin{ fill:var(--lcd-fg-dim); transition:fill .3s; }
+  body.on-air .wire-plug-pin{ fill:var(--led-on); filter:drop-shadow(0 0 3px var(--led-on)); }
+  @media (max-width: 700px){
+    .stage{ padding:0; }
+    .sidewire{ display:none; }
+  }
+
+  /* ---------- device ---------- */
+  .device{
+    position:relative;
+    background: linear-gradient(160deg, var(--case-hi), var(--case) 40%, var(--case-lo));
+    border-radius: 26px;
+    padding: 22px 18px 26px;
+    box-shadow:
+      0 30px 60px -20px rgba(0,0,0,.7),
+      inset 0 1px 0 rgba(255,255,255,.06),
+      inset 0 -2px 8px rgba(0,0,0,.5);
+    border:1px solid #0a0b0c;
+  }
+  .device::before{
+    content:"";
+    position:absolute; inset:0;
+    border-radius:26px;
+    background: repeating-linear-gradient(115deg, rgba(255,255,255,.015) 0 2px, transparent 2px 5px);
+    pointer-events:none;
+  }
+
+  .antenna-row{ display:flex; justify-content:center; margin-bottom:-2px; }
+  .antenna{
+    width:6px; height:64px;
+    background: linear-gradient(90deg,#3a3d41,#8a8f94 45%,#3a3d41);
+    border-radius: 3px 3px 1px 1px;
+    position:relative;
+    transform: rotate(4deg);
+    transform-origin:bottom center;
+  }
+  .antenna::after{
+    content:"";
+    position:absolute; top:-8px; left:50%; transform:translateX(-50%);
+    width:11px; height:11px; border-radius:50%;
+    background: var(--led-off);
+    box-shadow: 0 0 0 3px rgba(0,0,0,.4);
+    transition: background .3s, box-shadow .3s;
+  }
+  .device.playing .antenna::after{
+    background: var(--led-on);
+    box-shadow: 0 0 10px 3px var(--led-on), 0 0 0 3px rgba(0,0,0,.4);
+    animation: breathe 2.4s ease-in-out infinite;
+  }
+  @keyframes breathe{ 0%,100%{opacity:1;} 50%{opacity:.45;} }
+
+  .antenna-feed{ width:100%; height:26px; margin-top:-2px; overflow:visible; display:block; }
+  .antenna-feed .wire-glow{ stroke-width:1.6; stroke-dasharray:4 8; }
+
+  .top-bar{ display:flex; align-items:center; justify-content:space-between; margin: 10px 4px 14px; }
+  .brand{ font-size:11px; letter-spacing:3px; color:var(--text-dim); font-weight:700; }
+  .grille{
+    display:grid; grid-template-columns:repeat(8,1fr); gap:4px;
+    padding:8px 10px; border-radius:10px;
+    background: var(--case-lo);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,.6);
+  }
+  .grille span{
+    width:4px; height:4px; border-radius:50%;
+    background: #050505;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.8), 0 0.5px 0 rgba(255,255,255,.05);
+  }
+
+  /* ---------- screen ---------- */
+  .screen{
+    position:relative;
+    background: linear-gradient(180deg, var(--lcd-bg), var(--lcd-bg-2));
+    border-radius:12px;
+    padding:14px 16px 12px;
+    box-shadow: inset 0 3px 10px rgba(0,0,0,.7), inset 0 0 0 2px #060a08, inset 0 0 30px rgba(0,0,0,.4);
+    overflow:hidden;
+    min-height:118px;
+  }
+  .screen::after{
+    content:"";
+    position:absolute; inset:0;
+    background: repeating-linear-gradient(0deg, rgba(0,0,0,.18) 0 1px, transparent 1px 3px);
+    pointer-events:none;
+    mix-blend-mode:multiply;
+  }
+  .screen.flicker::before{
+    content:""; position:absolute; inset:0; background:rgba(139,255,184,.08);
+    animation: staticFlicker .35s steps(2,end) 2;
+  }
+  @keyframes staticFlicker{ 0%,100%{opacity:0;} 50%{opacity:1;} }
+
+  .screen-row1{
+    display:flex; justify-content:space-between; align-items:center;
+    font-family:'Share Tech Mono', monospace; font-size:11px; color:var(--lcd-fg-dim);
+    letter-spacing:1px; margin-bottom:6px;
+  }
+  .on-air{ display:flex; align-items:center; gap:5px; }
+  .on-air .dot{ width:6px; height:6px; border-radius:50%; background:var(--lcd-fg-dim); }
+  .device.playing .on-air .dot{ background:var(--lcd-fg); box-shadow:0 0 6px var(--lcd-fg); }
+  .device.playing .on-air .lbl{ color:var(--lcd-fg); }
+
+  .station-name{
+    font-family:'Share Tech Mono', monospace;
+    font-size: 21px; color:var(--lcd-fg);
+    text-shadow: 0 0 8px rgba(139,255,184,.55), 0 0 2px rgba(139,255,184,.8);
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+    margin: 4px 0 2px;
+    min-height:26px;
+  }
+  .station-sub{
+    font-family:'Vazirmatn',sans-serif; font-size:12px; color:var(--lcd-fg-dim);
+    display:flex; justify-content:space-between; margin-top:8px;
+  }
+  .vol-meter{ display:flex; gap:3px; align-items:flex-end; height:14px; }
+  .vol-meter i{
+    width:4px; background:var(--lcd-fg-dim); display:block; border-radius:1px;
+  }
+  .vol-meter i.on{ background:var(--lcd-fg); box-shadow:0 0 4px var(--lcd-fg); }
+
+  /* ---------- controls ---------- */
+  .controls{ margin-top:16px; display:flex; flex-direction:column; gap:10px; }
+  .row{ display:flex; gap:10px; }
+  button{
+    font-family:'Vazirmatn',sans-serif; cursor:pointer; border:none; color:var(--text);
+    background: linear-gradient(180deg, var(--btn-hi), var(--btn) 55%, var(--btn-lo));
+    border-radius:12px;
+    box-shadow: 0 3px 0 var(--btn-lo), inset 0 1px 0 rgba(255,255,255,.08), 0 6px 10px rgba(0,0,0,.35);
+    transition: transform .06s ease, box-shadow .06s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+  button:active{ transform: translateY(3px); box-shadow: 0 0 0 var(--btn-lo), inset 0 1px 0 rgba(255,255,255,.08); }
+  button:focus-visible{ outline:2px solid var(--lcd-fg); outline-offset:2px; }
+
+  .scan-row button{ flex:1; padding:14px 0; font-size:18px; }
+  .scan-row .play{
+    flex:1.3;
+    background: linear-gradient(180deg,#ff8a6c,var(--accent) 55%,#c8492f);
+    box-shadow: 0 3px 0 #a83c26, inset 0 1px 0 rgba(255,255,255,.25), 0 6px 14px rgba(255,106,77,.35);
+    font-weight:700;
+  }
+  .scan-row .play:active{ box-shadow:0 0 0 #a83c26; }
+
+  .vol-row{ align-items:center; }
+  .vol-row button{ flex:0 0 52px; padding:12px 0; font-size:18px; }
+  .vol-track{
+    flex:1; position:relative; height:44px; border-radius:12px;
+    background: var(--case-lo); box-shadow: inset 0 2px 6px rgba(0,0,0,.6);
+    display:flex; align-items:center; padding:0 10px;
+  }
+  .vol-track .fill{
+    height:6px; border-radius:4px; background: linear-gradient(90deg,#3f7a5c,var(--lcd-fg));
+    width:70%; transition:width .12s;
+    box-shadow:0 0 6px rgba(139,255,184,.5);
+  }
+  .vol-track-bg{ position:absolute; right:10px; left:10px; height:6px; border-radius:4px; background:#000; opacity:.5; }
+
+  .util-row button{ flex:1; padding:11px 0; font-size:12.5px; font-weight:600; display:flex; align-items:center; justify-content:center; gap:6px; }
+  .util-row button svg{ width:15px; height:15px; }
+
+  /* ---------- panels ---------- */
+  .panel{
+    margin-top:10px; background:var(--case-lo); border-radius:12px;
+    box-shadow: inset 0 2px 8px rgba(0,0,0,.6);
+    padding:10px; display:none;
+  }
+  .panel.open{ display:block; }
+  .panel h3{ margin:2px 4px 8px; font-size:12.5px; color:var(--text-dim); font-weight:600; }
+
+  .station-list{ max-height:210px; overflow-y:auto; display:flex; flex-direction:column; gap:6px; }
+  .station-item{
+    display:flex; align-items:center; justify-content:space-between; gap:8px;
+    background:var(--btn); border-radius:9px; padding:9px 10px;
+    cursor:pointer; border:1px solid transparent;
+  }
+  .station-item.active{ border-color:var(--lcd-fg); box-shadow:0 0 8px rgba(139,255,184,.25); }
+  .station-item .meta{ display:flex; flex-direction:column; overflow:hidden; }
+  .station-item .meta b{ font-size:13px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:190px; }
+  .station-item .meta small{ font-size:10.5px; color:var(--text-dim); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:190px; }
+  .station-item .del{
+    background:transparent; box-shadow:none; color:#c96; font-size:16px; padding:2px 6px; flex:none;
+  }
+  .station-item .del:active{ transform:none; }
+
+  .form-grid{ display:flex; flex-direction:column; gap:8px; }
+  .form-grid input[type=text]{
+    width:100%; background:#0d0f11; border:1px solid #34383e; color:var(--text);
+    border-radius:8px; padding:10px 12px; font-family:'Vazirmatn',sans-serif; font-size:13px;
+  }
+  .form-grid input[type=text]:focus{ outline:1px solid var(--lcd-fg); }
+  .form-grid label{ display:flex; align-items:center; gap:6px; font-size:12px; color:var(--text-dim); padding:2px 2px; }
+  .form-actions{ display:flex; gap:8px; }
+  .form-actions button{ flex:1; padding:10px 0; font-size:12.5px; }
+  .form-actions .save{
+    background: linear-gradient(180deg,#5be08a,#2fae63 55%,#1f7d47);
+    box-shadow:0 3px 0 #1a6c3d, inset 0 1px 0 rgba(255,255,255,.2); color:#08210f; font-weight:700;
+  }
+
+  .hint{ font-size:11px; color:var(--text-dim); margin:6px 4px 0; line-height:1.7; }
+
+  .footer-note{ text-align:center; font-size:10.5px; color:#5c6066; margin-top:14px; letter-spacing:.5px; }
+
+  .version-tag{
+    text-align:center; font-family:'Share Tech Mono', monospace;
+    font-size:11px; letter-spacing:3px; font-weight:700;
+    margin-bottom:8px; text-shadow:0 0 8px currentColor;
+    animation: rgbCycle 5s linear infinite;
+  }
+  @keyframes rgbCycle{
+    0%   { color: hsl(0,100%,62%); }
+    16.6%{ color: hsl(60,100%,55%); }
+    33.3%{ color: hsl(120,100%,50%); }
+    50%  { color: hsl(180,100%,55%); }
+    66.6%{ color: hsl(240,100%,68%); }
+    83.3%{ color: hsl(300,100%,62%); }
+    100% { color: hsl(360,100%,62%); }
+  }
+
+  .plate-row{ display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin-top:12px; }
+  .plate-btn{
+    display:flex; align-items:center; gap:6px;
+    background: linear-gradient(180deg,#3a3e44,#26292d);
+    border:1px solid #46494e; border-radius:20px;
+    padding:5px 12px 5px 8px; font-size:10.5px; color:var(--text-dim);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.06), 0 2px 4px rgba(0,0,0,.4);
+  }
+  .plate-btn .screw{
+    width:8px; height:8px; border-radius:50%;
+    background: radial-gradient(circle at 35% 35%, #a7abaf, #55595d 70%);
+    box-shadow: inset 0 0 0 1px #1a1c1f;
+  }
+  .about-body{ display:flex; flex-direction:column; gap:10px; }
+  .maker-card{
+    display:flex; align-items:center; gap:10px;
+    background:var(--btn); border-radius:10px; padding:10px 12px;
+  }
+  .maker-avatar{
+    width:40px; height:40px; border-radius:50%; flex:none;
+    background: linear-gradient(145deg,#3f7a5c,var(--lcd-fg));
+    display:flex; align-items:center; justify-content:center;
+    font-size:17px; color:#08210f; font-weight:800;
+  }
+  .maker-info b{ display:block; font-size:13.5px; }
+  .maker-info span{ font-size:11px; color:var(--text-dim); }
+  .tg-link{
+    display:flex; align-items:center; justify-content:center; gap:8px;
+    background: linear-gradient(180deg,#3fa9f5,#1f87d6 55%,#1668a8);
+    box-shadow:0 3px 0 #124e80, inset 0 1px 0 rgba(255,255,255,.25);
+    color:#fff; text-decoration:none; border-radius:10px; padding:11px 0; font-size:13px; font-weight:700;
+  }
+  .tg-link:active{ transform:translateY(3px); box-shadow:0 0 0 #124e80; }
+  .tg-link svg{ width:17px; height:17px; }
+
+  ::-webkit-scrollbar{ width:6px; }
+  ::-webkit-scrollbar-thumb{ background:#3d4147; border-radius:3px; }
+
+  /* ---------- equalizer ---------- */
+  .eq{ display:flex; gap:3px; align-items:flex-end; height:20px; margin:2px 0 8px; }
+  .eq i{ flex:1; background:var(--lcd-fg-dim); border-radius:2px; height:22%; transition:background .3s; display:block; }
+  .device.playing .eq i{ background:var(--lcd-fg); box-shadow:0 0 4px var(--lcd-fg); animation-name:eqBounce; animation-iteration-count:infinite; animation-timing-function:ease-in-out; }
+  @keyframes eqBounce{ 0%,100%{ height:20%; } 50%{ height:95%; } }
+  .device.playing .eq i:nth-child(1){ animation-duration:.62s; animation-delay:0s; }
+  .device.playing .eq i:nth-child(2){ animation-duration:.81s; animation-delay:.08s; }
+  .device.playing .eq i:nth-child(3){ animation-duration:.53s; animation-delay:.15s; }
+  .device.playing .eq i:nth-child(4){ animation-duration:.9s;  animation-delay:.05s; }
+  .device.playing .eq i:nth-child(5){ animation-duration:.68s; animation-delay:.22s; }
+  .device.playing .eq i:nth-child(6){ animation-duration:.75s; animation-delay:.02s; }
+  .device.playing .eq i:nth-child(7){ animation-duration:.58s; animation-delay:.18s; }
+  .device.playing .eq i:nth-child(8){ animation-duration:.86s; animation-delay:.11s; }
+
+  /* ---------- theme variants ---------- */
+  body[data-theme="gold"]{
+    --case:#3a2f1d; --case-hi:#5a4a2c; --case-lo:#241d10; --grip:#1c1608;
+    --metal:#c9a227; --screw:#8a6d1f;
+    --lcd-bg:#241a05; --lcd-bg-2:#180f02; --lcd-fg:#ffcf6b; --lcd-fg-dim:#8a6a2c;
+    --led-on:#ffcf6b; --led-off:#4a3a10;
+    --accent:#e0a83a; --accent-dim:#7a5a1c;
+    --btn:#4a3b20; --btn-hi:#6b5730; --btn-lo:#2a2010;
+    --text:#f0e3c0; --text-dim:#b39a5e;
+  }
+  body[data-theme="military"]{
+    --case:#3a3f2e; --case-hi:#4f5540; --case-lo:#22261a; --grip:#1c1f15;
+    --metal:#7d7a5c; --screw:#55523a;
+    --lcd-bg:#241c0a; --lcd-bg-2:#181205; --lcd-fg:#ffb347; --lcd-fg-dim:#8a6a2c;
+    --led-on:#ff5d3d; --led-off:#4a2a1a;
+    --accent:#c0392b; --accent-dim:#6b2018;
+    --btn:#3d4230; --btn-hi:#525841; --btn-lo:#252a1c;
+    --text:#e4e6da; --text-dim:#9aa088;
+  }
+  body[data-theme="classic"]{
+    --case:#e9e6df; --case-hi:#ffffff; --case-lo:#cfcbc0; --grip:#d8d4c8;
+    --metal:#9a9690; --screw:#7a766e;
+    --lcd-bg:#0e1a24; --lcd-bg-2:#0a141c; --lcd-fg:#6fd8ff; --lcd-fg-dim:#356575;
+    --led-on:#3ac6ff; --led-off:#2a3a44;
+    --accent:#e5533d; --accent-dim:#a8402e;
+    --btn:#f1efe9; --btn-hi:#ffffff; --btn-lo:#d6d2c6;
+    --text:#2b2d2c; --text-dim:#6b6f6e;
+  }
+
+  /* ---------- search + install ---------- */
+  .search-wrap{ position:relative; margin-bottom:8px; }
+  .search-wrap input{
+    width:100%; background:#0d0f11; border:1px solid #34383e; color:var(--text);
+    border-radius:8px; padding:9px 32px 9px 12px; font-family:'Vazirmatn',sans-serif; font-size:12.5px;
+  }
+  .search-wrap input:focus{ outline:1px solid var(--lcd-fg); }
+  .search-wrap .icon{ position:absolute; top:50%; right:10px; transform:translateY(-50%); font-size:13px; color:var(--text-dim); pointer-events:none; }
+  .empty-search{ font-size:11.5px; color:var(--text-dim); padding:10px 4px; text-align:center; }
+
+  .install-btn{ display:none; }
+  .install-btn.show{ display:flex; }
+</style>
+</head>
+<body>
+<div class="stage">
+
+  <div class="sidewire left" aria-hidden="true">
+    <svg viewBox="0 0 88 640" preserveAspectRatio="none">
+      <path class="wire-path inner" d="M44 0 C 10 90, 70 160, 30 260 S 68 420, 40 520 C 24 570, 40 600, 44 640"></path>
+      <path class="wire-path" d="M44 0 C 10 90, 70 160, 30 260 S 68 420, 40 520 C 24 570, 40 600, 44 640"></path>
+      <path id="wireGlowL" class="wire-glow" d="M44 0 C 10 90, 70 160, 30 260 S 68 420, 40 520 C 24 570, 40 600, 44 640"></path>
+      <circle class="wire-node" cx="44" cy="0" r="5"></circle>
+      <rect class="wire-plug" x="26" y="618" width="36" height="22" rx="4"></rect>
+      <circle class="wire-plug-pin" cx="36" cy="629" r="2.4"></circle>
+      <circle class="wire-plug-pin" cx="52" cy="629" r="2.4"></circle>
+    </svg>
+  </div>
+
+  <div class="wrap">
+  <div class="device" id="device">
+    <div class="version-tag">WV RADIO &nbsp;·&nbsp; v2.5.0</div>
+    <div class="antenna-row"><div class="antenna"></div></div>
+    <svg class="antenna-feed" viewBox="0 0 100 26" preserveAspectRatio="none" aria-hidden="true">
+      <path class="wire-path inner" d="M50 0 C 20 6, 80 12, 50 26"></path>
+      <path class="wire-path" d="M50 0 C 20 6, 80 12, 50 26"></path>
+      <path class="wire-glow" d="M50 0 C 20 6, 80 12, 50 26"></path>
+    </svg>
+
+    <div class="top-bar">
+      <span class="brand">WV&nbsp;·&nbsp;بی‌سیم رادیو</span>
+      <div class="grille" id="grille"></div>
+    </div>
+
+    <div class="screen" id="screen">
+      <div class="screen-row1">
+        <div class="on-air"><span class="dot"></span><span class="lbl" id="statusLbl">آماده</span></div>
+        <span id="clock">--:--</span>
+      </div>
+      <div class="station-name" id="stationName">هیچ رادیویی انتخاب نشده</div>
+      <div class="eq" id="eqBars" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+      <div class="station-sub">
+        <span id="stationIndex">۰ / ۰</span>
+        <div class="vol-meter" id="volMeter"></div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <div class="row scan-row">
+        <button id="prevBtn" title="رادیو قبلی">◀</button>
+        <button id="playBtn" class="play" title="پخش / توقف">▶</button>
+        <button id="nextBtn" title="رادیو بعدی">▶</button>
+      </div>
+
+      <div class="row vol-row">
+        <button id="volDown" title="کم کردن صدا">−</button>
+        <div class="vol-track"><div class="vol-track-bg"></div><div class="fill" id="volFill"></div></div>
+        <button id="volUp" title="زیاد کردن صدا">＋</button>
+      </div>
+
+      <div class="row util-row">
+        <button id="listBtn">📻 لیست رادیوها</button>
+        <button id="addBtn">＋ افزودن</button>
+      </div>
+    </div>
+
+    <div class="panel" id="listPanel">
+      <h3>رادیوهای ذخیره‌شده</h3>
+      <div class="search-wrap">
+        <input type="text" id="stationSearch" placeholder="جست‌وجو در رادیوها...">
+        <span class="icon">🔎</span>
+      </div>
+      <div class="station-list" id="stationList"></div>
+    </div>
+
+    <div class="panel" id="addPanel">
+      <h3>افزودن رادیو جدید</h3>
+      <div class="form-grid">
+        <input type="text" id="inpName" placeholder="نام رادیو (مثلاً رادیو جوان)">
+        <input type="text" id="inpUrl" placeholder="لینک استریم رادیو (mp3 / stream url)">
+        <div class="form-actions">
+          <button class="save" id="saveBtn">ذخیره</button>
+          <button id="cancelAddBtn">انصراف</button>
+        </div>
+      </div>
+      <div class="hint">لینک باید یک آدرس مستقیم پخش (stream) باشد، نه صفحه‌ی وب سایت رادیو.</div>
+    </div>
+
+    <div class="panel" id="aboutPanel">
+      <h3>درباره سازنده</h3>
+      <div class="about-body">
+        <div class="maker-card">
+          <div class="maker-avatar">M</div>
+          <div class="maker-info">
+            <b>Maeve Wiley</b>
+            <span>سازنده‌ی رادیو</span>
+          </div>
+        </div>
+        <a class="tg-link" id="tgLink" href="https://t.me/justmaeve" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.999 15.171l-.397 5.591c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.937L24.86 4.965h.001c.321-1.496-.541-2.081-1.527-1.714L1.146 11.634c-1.466.573-1.443 1.394-.249 1.766l5.905 1.843L21.398 6.5c.652-.428 1.246-.19.757.238"/></svg>
+          <span id="tgLabel">پیام در تلگرام: justmaeve@</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="plate-row">
+    <button class="plate-btn" id="themeBtn"><span class="screw"></span> تغییر رنگ</button>
+    <button class="plate-btn" id="aboutBtn"><span class="screw"></span> اطلاعات سازنده</button>
+    <button class="plate-btn install-btn" id="installBtn"><span class="screw"></span> نصب اپ 📲</button>
+  </div>
+  <div class="footer-note">دکمه‌های پخش، جابه‌جایی و صدا کاملاً فعال‌اند</div>
+  </div>
+
+  <div class="sidewire right" aria-hidden="true">
+    <svg viewBox="0 0 88 640" preserveAspectRatio="none">
+      <path class="wire-path inner" d="M44 0 C 10 90, 70 160, 30 260 S 68 420, 40 520 C 24 570, 40 600, 44 640"></path>
+      <path class="wire-path" d="M44 0 C 10 90, 70 160, 30 260 S 68 420, 40 520 C 24 570, 40 600, 44 640"></path>
+      <path id="wireGlowR" class="wire-glow" d="M44 0 C 10 90, 70 160, 30 260 S 68 420, 40 520 C 24 570, 40 600, 44 640"></path>
+      <circle class="wire-node" cx="44" cy="0" r="5"></circle>
+      <rect class="wire-plug" x="26" y="618" width="36" height="22" rx="4"></rect>
+      <circle class="wire-plug-pin" cx="36" cy="629" r="2.4"></circle>
+      <circle class="wire-plug-pin" cx="52" cy="629" r="2.4"></circle>
+    </svg>
+  </div>
+
+</div>
+
+<audio id="audio" preload="none"></audio>
+
+<script>
+(function(){
+  "use strict";
+
+  var DEFAULT_STATIONS = [
+    { name:"NPR News", sub:"اخبار ملی آمریکا", url:"https://npr-ice.streamguys1.com/live.mp3", isDefault:true },
+    { name:"WBEZ شیکاگو", sub:"رادیوی عمومی شیکاگو", url:"http://stream.wbez.org/wbez128.mp3", isDefault:true },
+    { name:"WNYC نیویورک", sub:"اخبار عمومی نیویورک", url:"https://fm939.wnyc.org/wnycfm-tunein.aac", isDefault:true },
+    { name:"WPR News", sub:"اخبار عمومی ویسکانسین", url:"https://wpr-ice.streamguys1.com/wpr-ideas-mp3-64", isDefault:true },
+    { name:"SC Public Radio News", sub:"اخبار کارولینای جنوبی", url:"https://playerservices.streamtheworld.com/api/livestream-redirect/WRJAFM.mp3", isDefault:true },
+    { name:"SC Public Radio Music", sub:"اخبار و موسیقی کارولینای جنوبی", url:"https://playerservices.streamtheworld.com/api/livestream-redirect/WLTRFM.mp3", isDefault:true },
+    { name:"KAMU-FM", sub:"رادیوی عمومی تگزاس", url:"https://kamu.streamguys1.com/hd1-192", isDefault:true },
+    { name:"American Cowboy Radio", sub:"کانتری و کابویی از تگزاس غربی", url:"https://sh.fl-us.audio-stream.com/proxy/jturva07?mp=/live", isDefault:true },
+    { name:"Marfa Public Radio", sub:"اخبار و موسیقی بیگ بند، تگزاس غربی", url:"http://marfapr-ice.streamguys1.com/krts", isDefault:true },
+    { name:"KUTX آستین", sub:"موسیقی تگزاس و آمریکانا", url:"https://streams.kut.org/4428_192.mp3", isDefault:true },
+    { name:"WNCW", sub:"فولک و بلوگراس", url:"https://wncw-live-a.edge.audiocdn.com/6286_56k.aac", isDefault:true },
+    { name:"Radio Woodstock WDST", sub:"راک و فولک هادسون ولی", url:"https://stream.revma.ihrhls.com/zc7332", isDefault:true },
+    { name:"Jazz24", sub:"جاز آمریکایی", url:"https://live.wostreaming.net/direct/ppm-jazz24mp3-ibc1", isDefault:true },
+    { name:"KCRW Eclectic24", sub:"اکلکتیک آمریکا", url:"https://kcrw.streamguys1.com/kcrw_192k_mp3_on_air", isDefault:true },
+    { name:"The Current", sub:"ایندی/پاپ مینه‌سوتا", url:"https://current.stream.publicradio.org/current.mp3", isDefault:true },
+    { name:"WBGO", sub:"جاز نیوجرسی", url:"https://ais-sa8.cdnstream1.com/3629_128.mp3", isDefault:true },
+    { name:"KSDS Jazz 88.3", sub:"جاز سن‌دیگو", url:"https://ksds-ice.streamguys1.com/ksds.mp3", isDefault:true },
+    { name:"KEXP", sub:"ایندی سیاتل", url:"https://kexp-mp3-128.streamguys1.com/kexp128.mp3", isDefault:true },
+    { name:"Radio Paradise", sub:"میکس متنوع کالیفرنیا", url:"https://stream.radioparadise.com/mp3-192", isDefault:true },
+    { name:"DARE FM", sub:"آلترناتیو نیویورک", url:"http://hydra.cdnstream.com/1552_128", isDefault:true },
+    { name:"Grateful Dead Radio", sub:"جم‌بند آمریکایی", url:"http://cassini.shoutca.st:8574/", isDefault:true }
+  ];
+
+  var LS_STATIONS = "wv_radio_stations_v1";
+  var LS_VOLUME   = "wv_radio_volume_v1";
+  var LS_LAST_IDX = "wv_radio_lastidx_v1";
+  var LS_THEME    = "wv_radio_theme_v1";
+
+  var audio = document.getElementById("audio");
+  var device = document.getElementById("device");
+  var screenEl = document.getElementById("screen");
+  var stationNameEl = document.getElementById("stationName");
+  var stationIndexEl = document.getElementById("stationIndex");
+  var statusLbl = document.getElementById("statusLbl");
+  var volFill = document.getElementById("volFill");
+  var volMeter = document.getElementById("volMeter");
+  var clockEl = document.getElementById("clock");
+  var grille = document.getElementById("grille");
+
+  var stations = loadStations();
+  var currentIndex = clampIndex(parseInt(localStorage.getItem(LS_LAST_IDX), 10) || 0);
+  var volume = parseInt(localStorage.getItem(LS_VOLUME), 10);
+  if (isNaN(volume)) volume = 70;
+  var isPlaying = false;
+
+  function loadStations(){
+    var arr = [];
+    try{
+      var raw = localStorage.getItem(LS_STATIONS);
+      if (raw){
+        var parsed = JSON.parse(raw);
+        if (Array.isArray(parsed)) arr = parsed;
+      }
+    }catch(e){}
+    return normalizeStations(arr);
+  }
+
+  function normalizeStations(list){
+    var defaultUrls = {};
+    DEFAULT_STATIONS.forEach(function(d){ defaultUrls[d.url] = true; });
+    var out = DEFAULT_STATIONS.map(function(d){
+      var existing = list.filter(function(s){ return s.url === d.url; })[0];
+      return {
+        name: (existing && existing.name) || d.name,
+        sub: (existing && existing.sub) || d.sub,
+        url: d.url,
+        isDefault: true
+      };
+    });
+    list.forEach(function(s){
+      if (!defaultUrls[s.url]){
+        out.push({ name:s.name, sub:s.sub, url:s.url, isDefault:false });
+      }
+    });
+    return out;
+  }
+  function saveStations(){ localStorage.setItem(LS_STATIONS, JSON.stringify(stations)); }
+  function clampIndex(i){
+    if (!stations || !stations.length) return 0;
+    return ((i % stations.length) + stations.length) % stations.length;
+  }
+
+  // build speaker grille dots
+  for (var g=0; g<32; g++){ var s=document.createElement("span"); grille.appendChild(s); }
+  // build volume meter bars
+  var BAR_COUNT = 10;
+  for (var b=0; b<BAR_COUNT; b++){
+    var i = document.createElement("i");
+    i.style.height = (4 + b*1.1) + "px";
+    volMeter.appendChild(i);
+  }
+
+  function updateClock(){
+    var d = new Date();
+    var hh = String(d.getHours()).padStart(2,"0");
+    var mm = String(d.getMinutes()).padStart(2,"0");
+    clockEl.textContent = hh + ":" + mm;
+  }
+  updateClock(); setInterval(updateClock, 15000);
+
+  function flickerScreen(){
+    screenEl.classList.remove("flicker");
+    void screenEl.offsetWidth;
+    screenEl.classList.add("flicker");
+  }
+
+  function renderVolume(){
+    volFill.style.width = volume + "%";
+    var lit = Math.round((volume/100) * BAR_COUNT);
+    Array.prototype.forEach.call(volMeter.children, function(el, idx){
+      el.classList.toggle("on", idx < lit && isPlaying);
+    });
+    audio.volume = volume/100;
+  }
+
+  function currentStation(){
+    return stations[currentIndex] || null;
+  }
+
+  function renderNowPlaying(){
+    var st = currentStation();
+    stationNameEl.textContent = st ? st.name : "هیچ رادیویی انتخاب نشده";
+    stationIndexEl.textContent = toFa(currentIndex+1) + " / " + toFa(stations.length);
+    renderVolume();
+  }
+
+  function toFa(n){
+    var map = {0:"۰",1:"۱",2:"۲",3:"۳",4:"۴",5:"۵",6:"۶",7:"۷",8:"۸",9:"۹"};
+    return String(n).split("").map(function(c){ return map[c]!==undefined?map[c]:c; }).join("");
+  }
+
+  function setStatus(text, on){
+    statusLbl.textContent = text;
+    device.classList.toggle("playing", !!on);
+    document.body.classList.toggle("on-air", !!on);
+    renderVolume();
+  }
+
+  function loadAndPlay(station){
+    if (!station || !station.url) return;
+    flickerScreen();
+    setStatus("در حال اتصال…", false);
+    audio.src = station.url;
+    audio.volume = volume/100;
+    var p = audio.play();
+    if (p && p.catch){
+      p.then(function(){
+        isPlaying = true;
+        setStatus("در حال پخش", true);
+      }).catch(function(){
+        isPlaying = false;
+        setStatus("خطا در پخش — لینک را بررسی کنید", false);
+      });
+    }
+  }
+
+  function playCurrent(){
+    renderNowPlaying();
+    highlightActiveInList();
+    loadAndPlay(currentStation());
+    localStorage.setItem(LS_LAST_IDX, String(currentIndex));
+  }
+
+  function togglePlay(){
+    var st = currentStation();
+    if (!st){ return; }
+    if (isPlaying){
+      audio.pause();
+      isPlaying = false;
+      setStatus("متوقف شد", false);
+    } else {
+      if (!audio.src || audio.src !== st.url){
+        loadAndPlay(st);
+      } else {
+        var p = audio.play();
+        if (p && p.then){
+          p.then(function(){ isPlaying = true; setStatus("در حال پخش", true); })
+           .catch(function(){ setStatus("خطا در پخش", false); });
+        }
+      }
+    }
+  }
+
+  function goNext(){
+    if (!stations.length) return;
+    currentIndex = clampIndex(currentIndex+1);
+    playCurrent();
+  }
+  function goPrev(){
+    if (!stations.length) return;
+    currentIndex = clampIndex(currentIndex-1);
+    playCurrent();
+  }
+
+  audio.addEventListener("waiting", function(){ setStatus("در حال بافر…", isPlaying); });
+  audio.addEventListener("playing", function(){ isPlaying = true; setStatus("در حال پخش", true); });
+  audio.addEventListener("pause", function(){ if(isPlaying){ isPlaying=false; setStatus("متوقف شد", false);} });
+  audio.addEventListener("error", function(){ isPlaying = false; setStatus("خطا در پخش این لینک", false); });
+
+  document.getElementById("playBtn").addEventListener("click", togglePlay);
+  document.getElementById("nextBtn").addEventListener("click", goNext);
+  document.getElementById("prevBtn").addEventListener("click", goPrev);
+
+  document.getElementById("volUp").addEventListener("click", function(){
+    volume = Math.min(100, volume+10);
+    localStorage.setItem(LS_VOLUME, String(volume));
+    renderVolume();
+  });
+  document.getElementById("volDown").addEventListener("click", function(){
+    volume = Math.max(0, volume-10);
+    localStorage.setItem(LS_VOLUME, String(volume));
+    renderVolume();
+  });
+
+  /* ---------- panels ---------- */
+  var listPanel = document.getElementById("listPanel");
+  var addPanel = document.getElementById("addPanel");
+  var aboutPanel = document.getElementById("aboutPanel");
+  function closeAllPanels(){
+    listPanel.classList.remove("open");
+    addPanel.classList.remove("open");
+    aboutPanel.classList.remove("open");
+  }
+  function togglePanel(panel){
+    var wasOpen = panel.classList.contains("open");
+    closeAllPanels();
+    if (!wasOpen) panel.classList.add("open");
+  }
+
+  document.getElementById("listBtn").addEventListener("click", function(){
+    renderStationList();
+    togglePanel(listPanel);
+  });
+  document.getElementById("addBtn").addEventListener("click", function(){
+    togglePanel(addPanel);
+  });
+  document.getElementById("cancelAddBtn").addEventListener("click", function(){
+    document.getElementById("inpName").value = "";
+    document.getElementById("inpUrl").value = "";
+    closeAllPanels();
+  });
+  document.getElementById("aboutBtn").addEventListener("click", function(){
+    togglePanel(aboutPanel);
+  });
+
+  function renderStationList(){
+    var list = document.getElementById("stationList");
+    list.innerHTML = "";
+    var q = (document.getElementById("stationSearch").value || "").trim().toLowerCase();
+    var indices = [];
+    stations.forEach(function(st, idx){
+      var hay = (st.name + " " + (st.sub||"")).toLowerCase();
+      if (!q || hay.indexOf(q) !== -1) indices.push(idx);
+    });
+    if (!stations.length){
+      var empty = document.createElement("div");
+      empty.className = "hint";
+      empty.textContent = "هیچ رادیویی ذخیره نشده. از دکمه «افزودن» استفاده کنید.";
+      list.appendChild(empty);
+      return;
+    }
+    if (!indices.length){
+      var noRes = document.createElement("div");
+      noRes.className = "empty-search";
+      noRes.textContent = "چیزی با این عبارت پیدا نشد";
+      list.appendChild(noRes);
+      return;
+    }
+    indices.forEach(function(idx){
+      var st = stations[idx];
+      var item = document.createElement("div");
+      item.className = "station-item" + (idx===currentIndex ? " active" : "");
+      var meta = document.createElement("div");
+      meta.className = "meta";
+      var b = document.createElement("b"); b.textContent = st.name;
+      var small = document.createElement("small"); small.textContent = st.sub || st.url;
+      meta.appendChild(b); meta.appendChild(small);
+      item.appendChild(meta);
+      if (!st.isDefault){
+        var del = document.createElement("button");
+        del.className = "del"; del.textContent = "✕"; del.title = "حذف";
+        del.addEventListener("click", function(ev){
+          ev.stopPropagation();
+          stations.splice(idx,1);
+          saveStations();
+          if (currentIndex >= stations.length) currentIndex = Math.max(0, stations.length-1);
+          renderStationList();
+          renderNowPlaying();
+        });
+        item.appendChild(del);
+      } else {
+        var lock = document.createElement("span");
+        lock.className = "del"; lock.style.cursor = "default"; lock.style.color = "var(--text-dim)";
+        lock.textContent = "🔒"; lock.title = "رادیوی پیش‌فرض - قابل حذف نیست";
+        item.appendChild(lock);
+      }
+      item.addEventListener("click", function(){
+        currentIndex = idx;
+        playCurrent();
+        renderStationList();
+      });
+      list.appendChild(item);
+    });
+  }
+  function highlightActiveInList(){
+    if (listPanel.classList.contains("open")) renderStationList();
+  }
+  document.getElementById("stationSearch").addEventListener("input", renderStationList);
+
+  document.getElementById("saveBtn").addEventListener("click", function(){
+    var name = document.getElementById("inpName").value.trim();
+    var url = document.getElementById("inpUrl").value.trim();
+    if (!name || !url){
+      flickerScreen();
+      stationNameEl.textContent = "نام و لینک را وارد کنید";
+      return;
+    }
+    var station = { name:name, sub:"افزوده‌شده توسط شما", url:url, isDefault:false };
+    stations.push(station);
+    saveStations();
+    document.getElementById("inpName").value = "";
+    document.getElementById("inpUrl").value = "";
+    currentIndex = stations.length-1;
+    playCurrent();
+    closeAllPanels();
+  });
+
+  /* ---------- theme switcher ---------- */
+  var THEMES = ["default","gold","military","classic"];
+  var THEME_LABELS = { "default":"کلاسیک تیره", "gold":"طلایی", "military":"نظامی", "classic":"سفید کلاسیک" };
+  var themeIdx = parseInt(localStorage.getItem(LS_THEME), 10);
+  if (isNaN(themeIdx) || themeIdx < 0 || themeIdx >= THEMES.length) themeIdx = 0;
+  function applyTheme(idx){
+    var t = THEMES[idx];
+    if (t === "default") document.body.removeAttribute("data-theme");
+    else document.body.setAttribute("data-theme", t);
+    localStorage.setItem(LS_THEME, String(idx));
+  }
+  applyTheme(themeIdx);
+  document.getElementById("themeBtn").addEventListener("click", function(){
+    themeIdx = (themeIdx + 1) % THEMES.length;
+    applyTheme(themeIdx);
+    flickerScreen();
+    var prevName = stationNameEl.textContent;
+    stationNameEl.textContent = "🎨 " + THEME_LABELS[THEMES[themeIdx]];
+    setTimeout(function(){ stationNameEl.textContent = prevName; }, 1100);
+  });
+
+  /* ---------- install to home screen ---------- */
+  var deferredInstallPrompt = null;
+  var installBtn = document.getElementById("installBtn");
+  window.addEventListener("beforeinstallprompt", function(e){
+    e.preventDefault();
+    deferredInstallPrompt = e;
+    installBtn.classList.add("show");
+  });
+  installBtn.addEventListener("click", function(){
+    if (!deferredInstallPrompt) return;
+    deferredInstallPrompt.prompt();
+    deferredInstallPrompt.userChoice.finally(function(){
+      deferredInstallPrompt = null;
+      installBtn.classList.remove("show");
+    });
+  });
+  window.addEventListener("appinstalled", function(){
+    installBtn.classList.remove("show");
+  });
+
+  /* ---------- init ---------- */
+  renderNowPlaying();
+  renderStationList();
+})();
+</script>
+</body>
+</html>
